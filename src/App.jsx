@@ -1,5 +1,6 @@
 import { useState } from "react"
 import iconStar from"./images/icon-star.svg"
+import illustrationThankYou from"./images/illustration-thank-you.svg"
 
 export function App(){
 
@@ -23,7 +24,7 @@ export function App(){
 
   return(
       submited === false ? (
-        <div className="bg-gradient-dark mx-6 p-6 rounded-2xl text-white font-overpass">
+        <div className="bg-gradient-dark max-w-106 mx-6 p-6 rounded-2xl text-white font-overpass">
           <div className="bg-dark-blue p-4 w-fit rounded-full mb-4">
             <img src={iconStar} alt="icon star" />
           </div>
@@ -43,7 +44,11 @@ export function App(){
           <button className="bg-orange w-full py-3 uppercase text-sm rounded-3xl tracking-1 font-bold" onClick={handleSubmit}>Submit</button>
           </div>
       ) : (
-        <p>outro codigo</p>
+        <div className="bg-gradient-dark max-w-106 mx-6 p-6 rounded-2xl text-white font-overpass">
+          <img src={illustrationThankYou} alt="illustration thank you" />
+
+          <p></p>
+        </div>
       )
   )
 }
